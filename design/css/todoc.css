@@ -8,8 +8,8 @@
 
 body{
     background: #CC95C0;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #7AA1D2, #DBD4B4, #CC95C0);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #7AA1D2, #DBD4B4, #CC95C0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: -webkit-linear-gradient(to right, #7AA1D2, #DBD4B4, #CC95C0);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #7AA1D2, #DBD4B4, #CC95C0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 input{
@@ -68,8 +68,12 @@ li:hover{
 }
 li{
     background-color: white;
-    height:30px;
+    padding: 10px;
+    overflow-wrap: break-word;
+    height:auto;
     line-height: 30px;
+    text-align: justify;
+   
     text-transform: capitalize;
     font-size: 16px;
 }
@@ -79,7 +83,7 @@ li:nth-child(2n){
 .dlt{
     background-color: #ee7744;
     height: 30px;
-    margin-right: 10px;
+    margin-right: 5px;
     text-align: center;
     display: inline-block;
     color: white;
@@ -87,8 +91,30 @@ li:nth-child(2n){
     width: 0;
     opacity: 0;
 }
+.edit
+{
+    height: 0;
+    margin-right: 5px;
+    color: white;
+    margin-left: 5px;
+    text-align: center;
+    display: inline-block !important;
+    background-color: steelblue;
+    transition: width .5s;
+    width: 0;
+    opacity: 0;
+    align-content: center;
+}
 
 li:hover .dlt{
     width: 40px;
     opacity: 1;
+}
+
+
+li:hover .edit{
+    width: 40px;
+    opacity: 1;
+    margin-top:5px;
+    height: 32px;
 }
